@@ -23,10 +23,9 @@ class YConnectIdentityProviderException extends IdentityProviderException
      */
     public static function clientException(ResponseInterface $response, array $data)
     {
-        var_dump($data);
         return static::fromResponse(
             $response,
-            isset($data['error']) ? $data['error'] : $response->getReasonPhrase()
+            isset($data['error']) && isset($data['error_description']) ? $data['error'].': '.$data['error_description'] : $response->getReasonPhrase()
         );
     }
 
