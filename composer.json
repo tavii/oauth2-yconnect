@@ -1,0 +1,38 @@
+{
+    "name": "tavii/oauth2-yconnect",
+    "description": "Yahoo Japan Yconnect library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "polidog",
+            "email": "polidogs@gmail.com"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authorisation",
+        "yahoo",
+        "yahoojapan",
+        "yconnect"
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "league/oauth2-client": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tavii\\OAuth2\\Client\\Provider\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tavii\\OAuth2\\Client\\Provider\\Test\\": "test"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6"
+    }
+}
