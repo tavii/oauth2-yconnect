@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tavii\\OAuth2\\Client\\Provider\\": "src"
+            "Tavii\\OAuth2\\Client\\Provider\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tavii\\OAuth2\\Client\\Provider\\Test\\": "test"
+            "Tavii\\OAuth2\\Client\\Provider\\Test\\": "test/src/"
         }
     },
     "require-dev": {
