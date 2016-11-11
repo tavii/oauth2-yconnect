@@ -1,5 +1,7 @@
 # YConnect(Yahoo Japan) Provider for OAuth 2.0 Client
 
+[![Build Status](https://travis-ci.org/tavii/oauth2-yconnect.svg?branch=master)](https://travis-ci.org/tavii/oauth2-yconnect)
+
 This package provides YConnect(Yahoo Japan) OAuth2.0 support for the PHP League's [ OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
 # Installation
