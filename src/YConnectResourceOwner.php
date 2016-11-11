@@ -32,6 +32,11 @@ class YConnectResourceOwner implements ResourceOwnerInterface
         return $this->response['user_id'] ?: null;
     }
 
+    public function getName()
+    {
+        return $this->response['name'] ?: null;
+    }
+
     public function getEmail()
     {
         return $this->response['email'] ?: null;
