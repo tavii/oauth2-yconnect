@@ -15,7 +15,7 @@ use Tavii\OAuth2\Client\Provider\Exception\YConnectIdentityProviderException;
 
 class YConnect extends AbstractProvider
 {
-    const API_DOMAIN = 'https://auth.login.yahoo.co.jp/';
+    const API_DOMAIN = 'https://auth.login.yahoo.co.jp';
 
     const USERINFO_DOMAIN = 'https://userinfo.yahooapis.jp';
 
