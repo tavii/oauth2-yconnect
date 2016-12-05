@@ -26,27 +26,47 @@ class YConnectResourceOwner implements ResourceOwnerInterface
         $this->response = $response;
     }
 
+    public function __call($name, $arguments)
+    {
+        $get = substr($name,0, 3);
+        if ($get !== 'get') {
+            return null;
+        }
+        $parameter = function($name) {
+            return ltrim(strtolower(preg_replace('/[A-Z]/', '_\0', str_replace("get", "", $name))), '_');
+        };
+        return $this->getResource($parameter($name));
+    }
+
 
     public function getId()
     {
-        return $this->response['user_id'] ?: null;
+        return $this->getResource('user_id');
     }
 
     public function getName()
     {
-        return $this->response['name'] ?: null;
+        return $this->getResource('name');
     }
 
     public function getEmail()
     {
-        return $this->response['email'] ?: null;
+        return $this->getResource('email');
     }
 
-
+    public function getAddress()
+    {
+        return $this->getResource('address');
+    }
 
     public function toArray()
     {
         return $this->response;
+    }
+
+    protected function getResource($name)
+    {
+        return isset($this->response[$name]) ? $this->response[$name] : null;
     }
 
 }
