@@ -1,5 +1,6 @@
 # YConnect(Yahoo Japan) Provider for OAuth 2.0 Client
 
+[![License](https://img.shields.io/packagist/l/league/oauth2-google.svg)](https://github.com/tavii/oauth2-yconnect/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/tavii/oauth2-yconnect.svg?branch=master)](https://travis-ci.org/tavii/oauth2-yconnect)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tavii/oauth2-yconnect/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tavii/oauth2-yconnect/?branch=master)
 
